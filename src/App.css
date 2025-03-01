@@ -1,0 +1,27 @@
+/* src/App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-top: 0px; /* Space for the fixed navbar */
+  padding-bottom: 0px; /* Space for the footer */
+}
+
+footer {
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}

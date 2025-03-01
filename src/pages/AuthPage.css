@@ -1,0 +1,84 @@
+.auth-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full height of the screen */
+  width: 100%; /* Full width of the screen */
+  position: absolute; /* Ensures it stays within the viewport */
+  top: 0; /* Aligns to the top of the screen */
+  left: 0; /* Aligns to the left of the screen */
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+.auth-card {
+  background-color: #1d1d1d; /* Dark card background */
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  width: 320px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff; /* Bright white for headings */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  color: #ffffff; /* Light label text */
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #333; /* Dark border */
+  border-radius: 4px;
+  background-color: #1d1d1d; /* Match card background */
+  color: #e0e0e0; /* Light text */
+}
+
+.input-field:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none;
+}
+
+/* Button styles for Login Page with high specificity */
+.auth-container .auth-card .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  border: 1px solid #0056b3;
+  border-radius: 4px;
+  color: white;  /* Ensures the text color is white */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.auth-container .auth-card .btn:hover {
+  background-color: #004085; /* Darker blue for hover */
+  border-color: #003366; /* Darker border for hover */
+}
+
+/* Disabled Button Styles */
+.auth-container .auth-card .btn:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+  color: #ffffff;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

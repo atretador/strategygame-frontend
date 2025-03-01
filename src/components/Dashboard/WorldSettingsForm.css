@@ -1,0 +1,109 @@
+/* General container styling */
+.world-settings-form-container {
+  max-width: 900px; /* Increased max-width for more space */
+  margin: 0px auto;
+  background-color: #2d2d2d; /* Dark theme background */
+  color: #f1f1f1; /* Light text for contrast */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form styling */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 10px; /* Space between items */
+}
+
+/* Input, textarea, and select styling */
+form input,
+form textarea,
+form select {
+  background-color: #3a3a3a; /* Darker input background */
+  color: #f1f1f1; /* Light text color */
+  border: 1px solid #555; /* Subtle border */
+  border-radius: 4px;
+  padding: 12px 20px; /* Wider padding for a larger feel */
+  font-size: 16px; /* Increased font size for readability */
+  outline: none;
+  height: 45px; /* Increased height for better user interaction */
+  box-sizing: border-box; /* Includes padding in height calculation */
+  width: 100%; /* Make all fields take the full width available */
+}
+
+/* Focused state */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #007bff; /* Highlighted border on focus */
+}
+
+/* Section for checkboxes */
+.climate-section {
+  grid-column: span 2; /* Full width section */
+  margin-top: 20px;
+}
+
+.climate-section legend {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.climate-section label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+/* Save button styling */
+form button {
+  grid-column: span 2; /* Full width button */
+  justify-self: center; /* Center horizontally */
+  background-color: #007bff; /* Primary blue */
+  color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 30px; /* Larger padding for a bigger button */
+  font-size: 18px; /* Bigger text for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make the button take full width */
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+form button:active {
+  background-color: #004494; /* Even darker blue on click */
+}
+
+/* Label spacing */
+label {
+  display: block;
+  margin-bottom: 8px; /* Space between label and input */
+  font-weight: bold; /* Make label text bold */
+}
+
+/* Research model section */
+.research-model-section {
+  grid-column: span 2; /* Full width for the research model section */
+}
+
+.research-model-section select {
+  width: 100%;
+  padding: 12px 20px; /* Consistent padding for dropdown */
+  font-size: 16px; /* Consistent font size */
+  border: 1px solid #555;
+  border-radius: 4px;
+  margin-top: 8px; /* Adds space between the label and dropdown */
+}
+
+/* Additional adjustments for better alignment */
+.research-model-section label {
+  margin-bottom: 5px; /* Space above the dropdown */
+  font-size: 16px; /* Larger text for better visibility */
+}

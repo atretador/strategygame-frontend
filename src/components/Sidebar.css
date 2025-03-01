@@ -1,0 +1,68 @@
+/* Sidebar container */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #000000; /* Darker background for elegance */
+  color: #ecf0f1; /* Light color text */
+  padding: 20px;
+  height: 100vh;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-header {
+  color: #ecf0f1;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Sidebar list */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-list li {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Sidebar links */
+.sidebar-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #1d0752; /* Subtle highlight on hover */
+  padding-left: 30px; /* Indent effect on hover */
+}
+
+/* Additional responsiveness for small screens */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 200px; /* Slightly narrower sidebar */
+  }
+
+  .sidebar-header {
+    font-size: 20px;
+  }
+
+  .sidebar-link {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}

@@ -1,0 +1,180 @@
+/* Factions Dashboard Styling */
+.factions-dashboard {
+    background-color: #2e2e2e; /* Darker card background */
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Light shadow for the container */
+    padding: 20px;
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Header Styling */
+.factions-dashboard h2 {
+    font-size: 34px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Error Message Styling */
+.error {
+    color: #ff6f61; /* Soft red color for errors */
+    font-weight: bold;
+}
+
+/* Form Styling */
+.factions-dashboard input,
+.factions-dashboard textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #555; /* Dark border color */
+    background-color: #3c3c3c; /* Dark input background */
+    color: #e0e0e0;
+    width: 100%; /* Full width for input and textarea */
+    box-sizing: border-box;
+}
+
+.factions-dashboard textarea {
+    height: 100px; /* Adjust height for description textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Add/Edit Button Styling */
+.factions-dashboard button {
+    padding: 10px 20px; /* Increased padding for better spacing */
+    border-radius: 4px;
+    background-color: #6200ea; /* Purple background for add/edit buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto; /* Ensure the button width adjusts to content */
+    display: inline-block; /* Keeps it inline with other content */
+    text-align: center;
+}
+
+.factions-dashboard button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+}
+
+/* Specific Styling for the "Add New Faction" Button */
+.factions-dashboard .add-faction-btn {
+    margin-top: 5px; /* Add a larger margin to the top to push it away from inputs */
+    margin-bottom: 15px; /* Add margin-bottom to give space after the button */
+}
+
+/* Add margin to input and textarea elements */
+.factions-dashboard input,
+.factions-dashboard textarea {
+    margin-bottom: 5px; /* Ensure input/textarea and button are properly spaced */
+}
+
+/* Space the form elements from the container edges */
+.factions-dashboard div {
+    margin-bottom: 1%; /* Provide space between the input form and the button */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Darker border */
+}
+
+th {
+    background-color: #333; /* Darker header background */
+    color: #e0e0e0;
+}
+
+tr:hover {
+    background-color: #444; /* Slightly lighter dark background on hover */
+}
+
+/* Edit and Remove Button Styling */
+.factions-dashboard button {
+    margin-right: 10px;
+}
+
+.factions-dashboard button.edit {
+    background-color: #03a9f4; /* Blue for edit */
+}
+
+.factions-dashboard button.remove {
+    background-color: #f44336; /* Red for remove */
+}
+
+.factions-dashboard button.edit:hover {
+    background-color: #0288d1; /* Darker blue */
+}
+
+.factions-dashboard button.remove:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* No Factions Available Styling */
+table td[colspan="2"] {
+    text-align: center;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* Container for the factions list with a fixed height and scrollable */
+.factions-list-container {
+    max-height: 380px; /* Adjust this value to your preferred default height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    resize: vertical; /* Allow vertical resizing */
+    border: 1px solid #444; /* Border around the container */
+    padding: 10px;
+    background-color: #333; /* Dark background */
+}
+
+/* Factions Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #e0e0e0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+/* Adjust the textarea inside table to be resizable */
+textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+/* Right-aligned Actions Column */
+th.actions, td.actions {
+    text-align: right;
+}
+
+th.actions {
+    padding-left: 10px; /* Adjust this value to move the label */
+}
+
+/* Right-align buttons within the Actions column */
+.factions-dashboard .actions button {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}

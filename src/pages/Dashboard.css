@@ -1,0 +1,7 @@
+/* Main content area */
+.main-content {
+    margin-left: 125px; /* Adjust space for the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #1f1f1f; /* Darker background for the main content */
+}

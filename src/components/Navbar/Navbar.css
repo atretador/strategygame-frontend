@@ -1,0 +1,55 @@
+/* Make navbar fixed at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Make sure it's on top */
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: #61dafb; /* Light blue hover */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+  margin-left: auto; /* Push the nav items to the right */
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+.btn-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: #61dafb;
+}
